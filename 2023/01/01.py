@@ -2,15 +2,15 @@ input = open("input", "r")
 ll = [x for x in input.read().strip().split("\n")]
 
 def part_a():
-    arr = []
+    ans = []
     for l in ll:
         line = "".join(j for j in l if j.isdigit())
         numb = str(line[0]) + str(line[-1])
-        arr.append(int(numb))
-    print("Part one:", sum(arr))
+        ans.append(int(numb))
+    print("Part one:", sum(ans))
 
 def part_b():
-    arr = []
+    ans = []
     num = {
         "one": "o1e",
         "two": "t2o",
@@ -28,9 +28,9 @@ def part_b():
             l = l.replace(k, v)
         line = "".join(j for j in l if j.isdigit())
         numb = str(line[0]) + str(line[-1])
-        arr.append(int(numb))
+        ans.append(int(numb))
 
-    print("Part two:", sum(arr))
+    print("Part two:", sum(ans))
 
 part_a()
 part_b()
