@@ -1,8 +1,6 @@
-
 input = open("input", "r")
 ll = [x for x in input.read().strip().split("\n")]
 
-print(ll)
 def part_a():
     arr = []
     for l in ll:
