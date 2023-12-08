@@ -31,9 +31,7 @@ def part_b():
             line = "".join(j for j in line if j.isdigit())
             numb = str(line[0]) + str(line[-1])
             arr.append(int(numb))
-
     print(sum(arr))
-
 
 part_a()
 part_b()
